@@ -164,11 +164,18 @@ body {
     display: none;
 }
 
+#moblie-nav>div>div {
+    display: none;
+}
+
 @media (max-width: 768px) {
     #desktop-nav {
         display: none;
     }
     #mobile-nav {
+        display: block;
+    }
+    #moblie-nav>div>div {
         display: block;
     }
 }
