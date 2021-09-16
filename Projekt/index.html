@@ -14,9 +14,8 @@
 <body>
 
     <!-- Navigations-Leiste -->
-    <nav class="header-nav">
-
-        <div class="container desktop-nav">
+    <nav id="header-nav">
+        <div class="container" id="desktop-nav">
             <div class="row">
                 <div class="col-6">
                     <a href="index.html"><img src="src/img/webdesign-logo.png" alt="Webdesign Logo"></a>
@@ -30,32 +29,50 @@
             </div>
         </div>
         <!-- Navigations-Leiste klein -->
-        <nav class="header-nav">
-            <div class="container mobile-nav">
-                <div class="row">
-                    <div class="col-6">
-                        <a href="index.html"><img src="src/img/webdesign-logo.png" alt="Webdesign Logo"></a>
-                        <div class="mobile-nav-dropdown clearfix">
-                            <div class="mobile-nav-button"><span>&equiv;</span></div>
-                            <div class="mobile-nav-content clearfix">
-                                <ul>
-                                    <li class="active"><a href="index.html">Startseite</a></li>
-                                    <li><a href="leistungen.html">Leistungen</a></li>
-                                    <li><a href="kontakt.html">Kontakt</a></li>
-                                    <li><a href="impressum.html">Impressum</a></li>
-                                </ul>
-                            </div>
+        <div class="container" id="moblie-nav">
+            <div class="row">
+                <div class="col-6">
+                    <a href="index.html"><img src="src/img/webdesign-logo.png" alt="Webdesign Logo"></a>
+                    <div class="clearfix" id="mobile-nav-dropdown">
+                        <div id="mobile-nav-button"><span>&equiv;</span></div>
+                        <div class="clearfix" id="mobile-nav-content">
+                            <ul>
+                                <li class="active"><a href="index.html">Startseite</a></li>
+                                <li><a href="leistungen.html">Leistungen</a></li>
+                                <li><a href="kontakt.html">Kontakt</a></li>
+                                <li><a href="impressum.html">Impressum</a></li>
+                            </ul>
                         </div>
-
                     </div>
+
                 </div>
             </div>
-        </nav>
+        </div>
     </nav>
 
     <!-- Header-Banner -->
 
-    <header class="header-banner"></header>
+    <header id="header-banner"></header>
+
+    <!-- NEWSLETTER-Bereich -->
+
+    <section id="newsletter-bereich">
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <p id="nb-werbetext"><span class="wichtiger-text">Melde dich jetzt für den Newsletter an und verpasse nichts mehr!</span> Wir schicken die nur interessante Informationen.</p>
+                </div>
+                <div class="col-2 clearfix">
+                    <form action="index.html" method="post" id="nb-form">
+                        <label class="screenreader" for="nb-email-input">E-Mail:</label>
+                        <input type="text" name="email" placeholder="Deine E-Mail Adresse" id="nb-email-input" pattern="(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|'(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*')@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])"
+                            titel="Gib eine gültige E-Mail Adrese ein.">
+                        <button class="btn-typ-1" type="submit" id="nb-btn">Jetzt anmelden!</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
 </body>

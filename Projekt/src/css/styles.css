@@ -31,10 +31,25 @@ body {
     background-color: #A62C21 !important;
 }
 
+.wichtiger-text {
+    font-weight: bold;
+}
+
+.screenreader {
+    display: none;
+}
+
+.btn-typ-1 {
+    background-color: #A62C21;
+    border: 2px solid #A62C21;
+    color: #fff;
+    padding: .4rem .6rem;
+}
+
 
 /* Navigations-Leiste */
 
-.header-nav {
+#header-nav {
     width: 100%;
     height: 50px;
     background-color: #3D3F45;
@@ -43,66 +58,66 @@ body {
     font-size: 1.1rem;
 }
 
-.header-nav a>img {
+#header-nav a>img {
     height: 30px;
     width: auto;
     float: left;
     margin: .55rem;
 }
 
-.header-nav ul {
+#header-nav ul {
     margin: 0;
     padding: 0;
     float: right;
     height: 100%;
 }
 
-.header-nav ul>li {
+#header-nav ul>li {
     display: inline-block;
     height: 100%;
     padding: 0 .4rem 0 .4rem;
 }
 
-.header-nav ul>li>a {
+#header-nav ul>li>a {
     margin-top: .8rem;
     display: inline-block;
 }
 
-.header-nav ul>li>a:link {
+#header-nav ul>li>a:link {
     color: #fff;
     text-decoration: none;
 }
 
-.header-nav ul>li>a:hover {
+#header-nav ul>li>a:hover {
     color: #E5E5E5;
     text-decoration: none;
 }
 
-.header-nav ul>li>a:active {
+#header-nav ul>li>a:active {
     color: #E5E5E5;
     text-decoration: none;
 }
 
-.header-nav ul>li>a:visited {
+#header-nav ul>li>a:visited {
     color: #fff;
     text-decoration: none;
 }
 
-.header-nav .col-6 {
+#header-nav .col-6 {
     padding-top: 0;
     padding-bottom: 0;
 }
 
-.header-nav .container,
-.header-nav .row,
-.header-nav .col-6 {
+#header-nav .container,
+#header-nav .row,
+#header-nav .col-6 {
     height: 100%;
 }
 
 
 /* Navigationsleite Mobil */
 
-.mobile-nav-button {
+#mobile-nav-button {
     color: #fff;
     float: right;
     font-size: 2rem;
@@ -114,13 +129,13 @@ body {
     margin-bottom: 8px;
 }
 
-.mobile-nav-button>span {
+#mobile-nav-button>span {
     position: absolute;
     bottom: -2px;
     left: 7px;
 }
 
-.mobile-nav-content>ul>li {
+#mobile-nav-content>ul>li {
     display: block;
     background-color: #3D3F45;
     height: 50px;
@@ -128,32 +143,32 @@ body {
     text-align: center;
 }
 
-.mobile-nav-dropdown {
+#mobile-nav-dropdown {
     position: relative;
     display: inline-block;
     float: right;
 }
 
-.mobile-nav-content {
+#mobile-nav-content {
     position: absolute;
     right: 0;
     top: 50px;
     display: none;
 }
 
-.mobile-nav-dropdown:hover>.mobile-nav-content {
+#mobile-nav-dropdown:hover>#mobile-nav-content {
     display: block;
 }
 
-.mobile-nav {
+#mobile-nav {
     display: none;
 }
 
 @media (max-width: 768px) {
-    .desktop-nav {
+    #desktop-nav {
         display: none;
     }
-    .mobile-nav {
+    #mobile-nav {
         display: block;
     }
 }
@@ -161,7 +176,7 @@ body {
 
 /* Header-Banner */
 
-.header-banner {
+#header-banner {
     background: url("../img/hintergrund.jpg") no-repeat;
     width: 100%;
     height: 0;
@@ -169,12 +184,81 @@ body {
     background-size: contain;
 }
 
-.header-banner-small {
+#header-banner-small {
     background: url("../img/hintergrund-klein.jpg") no-repeat;
     width: 100%;
     height: 0;
     padding-top: 15.625%;
     background-size: contain;
+}
+
+
+/* Newsletter-Bereich */
+
+#newsletter-bereich {
+    width: 100%;
+    background-color: #3D3F45;
+}
+
+#nb-werbetext {
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+#nb-form {
+    margin-top: .7rem;
+    float: right;
+    width: 100%;
+    text-align: right;
+}
+
+#nb-email-input {
+    width: 78%;
+    height: 35px;
+    border: 2px solid #fff;
+    padding: .4rem;
+}
+
+#nb-btn {
+    height: 35px;
+}
+
+@media(max-width: 1822px) {
+    #nb-email-input {
+        width: 70%;
+    }
+}
+
+@media(max-width: 1358px) {
+    #nb-email-input {
+        width: 100%;
+        margin-bottom: .5rem;
+    }
+    #nb-btn {
+        width: 100%;
+    }
+}
+
+@media(max-width: 768px) {
+    #nb-werbetext {
+        display: none;
+    }
+    #nb-form {
+        margin: 0;
+    }
+    #newsletter-bereich .col-4 {
+        display: none;
+    }
+}
+
+@media(max-width: 480px) {
+    #nb-email-input {
+        height: 25px;
+    }
+    #nb-btn {
+        height: 25px;
+        padding: .1rem;
+    }
 }
 
 
@@ -208,6 +292,10 @@ body {
 
 .col-3 {
     width: 50%;
+}
+
+.col-4 {
+    width: 66.666%;
 }
 
 .col-6 {
@@ -244,6 +332,9 @@ body {
     .col-3 {
         width: 100%;
     }
+    .col-4 {
+        width: 100%;
+    }
 }
 
 @media (max-width: 480px) {
@@ -254,6 +345,9 @@ body {
         width: 100%;
     }
     .col-3 {
+        width: 100%;
+    }
+    .col-4 {
         width: 100%;
     }
 }

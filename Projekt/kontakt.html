@@ -13,9 +13,9 @@
 
 <body>
     <!-- Navigations-Leiste -->
-    <nav class="header-nav">
+    <nav id="header-nav">
 
-        <div class="container desktop-nav">
+        <div class="container" id="desktop-nav">
             <div class="row">
                 <div class="col-6">
                     <a href="index.html"><img src="src/img/webdesign-logo.png" alt="Webdesign Logo"></a>
@@ -29,31 +29,29 @@
             </div>
         </div>
         <!-- Navigations-Leiste klein -->
-        <nav class="header-nav">
-            <div class="container mobile-nav">
-                <div class="row">
-                    <div class="col-6">
-                        <a href="index.html"><img src="src/img/webdesign-logo.png" alt="Webdesign Logo"></a>
-                        <div class="mobile-nav-dropdown clearfix">
-                            <div class="mobile-nav-button"><span>&equiv;</span></div>
-                            <div class="mobile-nav-content clearfix">
-                                <ul>
-                                    <li><a href="index.html">Startseite</a></li>
-                                    <li><a href="leistungen.html">Leistungen</a></li>
-                                    <li class="active"><a href="kontakt.html">Kontakt</a></li>
-                                    <li><a href="impressum.html">Impressum</a></li>
-                                </ul>
-                            </div>
+        <div class="container" id="moblie-nav">
+            <div class="row">
+                <div class="col-6">
+                    <a href="index.html"><img src="src/img/webdesign-logo.png" alt="Webdesign Logo"></a>
+                    <div class="clearfix" id="mobile-nav-dropdown">
+                        <div id="mobile-nav-button"><span>&equiv;</span></div>
+                        <div class="clearfix" id="mobile-nav-content">
+                            <ul>
+                                <li><a href="index.html">Startseite</a></li>
+                                <li><a href="leistungen.html">Leistungen</a></li>
+                                <li class="active"><a href="kontakt.html">Kontakt</a></li>
+                                <li><a href="impressum.html">Impressum</a></li>
+                            </ul>
                         </div>
-
                     </div>
+
                 </div>
             </div>
-        </nav>
+        </div>
     </nav>
     <!-- Header-Banner -->
 
-    <header class="header-banner-small"></header>
+    <header id="header-banner-small"></header>
 </body>
 
 </html>
