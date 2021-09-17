@@ -18,6 +18,37 @@ body {
     box-sizing: border-box;
 }
 
+:focus {
+    outline: none;
+    box-shadow: 0 0 2px 2px #E5E5E5, 0 0 10px #E5E5E5;
+}
+
+section {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+@media (max-width: 1366px) {
+    section {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    section {
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+}
+
+@media (max-width: 768) {
+    section {
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+    }
+}
+
 
 /* Generelles */
 
@@ -44,6 +75,65 @@ body {
     border: 2px solid #A62C21;
     color: #fff;
     padding: .4rem .6rem;
+}
+
+.btn-typ-1:hover {
+    background-color: #A62C21;
+    border: 2px solid #FFF;
+}
+
+.btn-typ-2 {
+    background-color: transparent;
+    color: #FFF;
+    border: 2px solid #FFF;
+    padding: .4rem .6rem;
+}
+
+.btn-typ-2:hover {
+    color: #A62C21;
+    font-weight: bold;
+    border: 2px solid #A62C21;
+}
+
+.intro-container {
+    text-align: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2.5rem;
+}
+
+@media (max-width: 1366px) {
+    .intro-container {
+        width: 90%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .intro-container {
+        width: 100%;
+    }
+}
+
+.intro-container>h1 {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+}
+
+.intro-container>p {
+    font-size: 1.2rem;
+}
+
+@media (max-width: 1366px) {
+    .intro-container>p {
+        margin-bottom: .5rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .intro-container>p {
+        margin-bottom: 0;
+    }
 }
 
 
@@ -112,6 +202,10 @@ body {
 #header-nav .row,
 #header-nav .col-6 {
     height: 100%;
+}
+
+.logo-link {
+    display: inline-block;
 }
 
 
@@ -205,6 +299,8 @@ body {
 #newsletter-bereich {
     width: 100%;
     background-color: #3D3F45;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 #nb-werbetext {
@@ -265,6 +361,89 @@ body {
     #nb-btn {
         height: 25px;
         padding: .1rem;
+    }
+}
+
+
+/* LEISTUNGEN-Bereich */
+
+.leistungs-box {
+    background-color: #3D3F45;
+    text-align: center;
+    color: #fff;
+    padding: 1rem 3rem 2.5rem;
+    width: 60%;
+    margin-bottom: 1.6rem;
+}
+
+#leistungen-bereich .row>.col-3:nth-of-type(even)>.leistungs-box {
+    margin-right: auto;
+    margin-left: 1rem;
+}
+
+#leistungen-bereich .row>.col-3:nth-of-type(odd)>.leistungs-box {
+    margin-left: auto;
+    margin-right: 1rem;
+}
+
+.leistungs-box>h2 {
+    font-size: 1.4rem;
+}
+
+.leistung-ansehen-btn {
+    height: 40px;
+    width: 40%;
+    border: 2px solid #FFF;
+    text-decoration: none;
+    display: inline-block;
+    padding-top: .5rem;
+    margin-top: 1rem;
+    min-width: 100px;
+}
+
+.leistung-ansehen-btn:link {
+    color: #fff;
+}
+
+.leistung-ansehen-btn:visited {
+    color: #fff;
+}
+
+.leistung-ansehen-btn:active {
+    color: #fff;
+}
+
+.leistung-ansehen-btn:hover {
+    color: #A62C21;
+    font-weight: bold;
+    border: 2px solid #A62C21;
+}
+
+@media (max-width: 1366px) {
+    .leistungs-box {
+        width: 80%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .leistungs-box {
+        width: 100%;
+        margin-bottom: .6rem;
+    }
+    #leistungen-bereich .row>.col-3:nth-of-type(even)>.leistungs-box {
+        margin-left: .5rem;
+    }
+    #leistungen-bereich .row>.col-3:nth-of-type(odd)>.leistungs-box {
+        margin-right: .5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    #leistungen-bereich .row>.col-3:nth-of-type(even)>.leistungs-box {
+        margin-left: 0;
+    }
+    #leistungen-bereich .row>.col-3:nth-of-type(odd)>.leistungs-box {
+        margin-right: 0;
     }
 }
 
